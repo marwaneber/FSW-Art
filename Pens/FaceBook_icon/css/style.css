@@ -1,0 +1,120 @@
+#div_body h2 {
+	text-align: center;
+	font-family: arial;
+}
+#div_body > div {
+	width: 40%;
+	min-width: 300px;
+  max-width: 300px;
+	margin: 0 auto;
+	min-height: 300px;
+}
+#follow {
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	width: 130px;
+}
+
+#follow a:hover {
+	background: white !important;
+	color: black !important;
+}
+
+#follow a {
+	display: block;
+	background: #ef0;
+	margin-bottom: -35px;
+	padding-left: 10px;
+	line-height: 35px;
+	font-weight: bold;
+	color: black;
+	letter-spacing: 2px;
+	font-family: Arial;
+	z-index: -868;
+	text-decoration: none;
+	transition: .5s all;
+	opacity: 0;
+}
+
+#follow:hover a {
+	opacity: 1;
+	margin-bottom: 10px;
+	z-index: 1;
+}
+
+#follow:hover * {
+	box-shadow: -4px 4px 20px 1px #607D8B;
+}
+
+#follow img	{
+	width: 100%;
+	display: block;
+	background: white;
+}
+
+#follow a:nth-child(1) {
+	background: #1da1f2;
+}
+
+#follow a:nth-child(2) {
+	background: #F48FB1;
+}
+
+#follow a:nth-child(3) {
+	background: #000;
+	color: white;
+}
+
+#follow a:nth-child(4) {
+	background: #4267b2;
+}
+
+.box{
+  margin: 30px auto;
+  position: relative;
+  width: 180px;
+  height: 180px;	
+  background: #2980b9;
+  padding: 0px;
+  border-radius: 16px;
+}
+.div1, .div2, .div3 {
+    position: absolute;
+    border-top: 25px solid #fff;
+    border-left: 25px solid #fff;
+}
+.div1 {
+    top: 30px;
+    right: 25px;
+    width: 30px;
+    height: 125px;
+    border-radius: 35px 0 0 0;
+}
+.div2 {
+    top: 85px;
+    right: 65px;
+    width: 15px;
+}
+.div3 {
+    top: 85px;
+    right: 30px;
+    width: 30px;
+    transform: skewX(-10deg);
+}
+.title {
+  position: absolute;
+  color: #fff;
+  background: #2980b9;
+  font-size: 18px;
+  width: 100%;
+  bottom: -65px;
+  opacity: 0;
+  padding: 10px 0px;
+  text-align: center;
+  font-family: Arial;
+  transition: all .5s linear;
+}
+.box:hover .title {
+  opacity: 1;
+}
